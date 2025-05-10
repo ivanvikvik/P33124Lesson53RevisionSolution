@@ -1,6 +1,6 @@
 ﻿#include "test.h"
 
-void main() {
+int main() {
 	cout << "TOTAL 15 tests:\n";
 	test01();
 	test02();
@@ -17,4 +17,6 @@ void main() {
 	test13();
 	test14();
 	test15();
+
+	return 0;
 }

@@ -402,3 +402,183 @@ void test26() {
 	}
 	delete[] matrix;
 }
+
+void test27() {
+	int n = 4, m = 4;
+	int i_expected = 4, j_expected = 4;
+
+	int** matrix = new int* [n];
+	matrix[0] = new int[m] {2, 2, 2, 2};
+	matrix[1] = new int[m] {2, 1, 2, 2};
+	matrix[2] = new int[m] {2, 2, 2, 2};
+	matrix[3] = new int[m] {2, 2, 2, 1};
+
+	print_test(matrix, n, m, i_expected, j_expected, "test27");
+
+	for (int i = 0; i < n; i++) {
+		delete[] matrix[i];
+	}
+	delete[] matrix;
+}
+
+void test28() {
+	int n = 4, m = 4;
+	int i_expected = 4, j_expected = 1;
+
+	int** matrix = new int* [n];
+	matrix[0] = new int[m] {2, 2, 2, 2};
+	matrix[1] = new int[m] {2, 1, 2, 2};
+	matrix[2] = new int[m] {2, 2, 2, 2};
+	matrix[3] = new int[m] {1, 2, 2, 2};
+
+	print_test(matrix, n, m, i_expected, j_expected, "test28");
+
+	for (int i = 0; i < n; i++) {
+		delete[] matrix[i];
+	}
+	delete[] matrix;
+}
+
+void test29() {
+	int n = 4, m = 4;
+	int i_expected = 3, j_expected = 4;
+
+	int** matrix = new int* [n];
+	matrix[0] = new int[m] {2, 2, 2, 2};
+	matrix[1] = new int[m] {2, 1, 2, 2};
+	matrix[2] = new int[m] {2, 2, 2, 1};
+	matrix[3] = new int[m] {2, 2, 2, 2};
+
+	print_test(matrix, n, m, i_expected, j_expected, "test29");
+
+	for (int i = 0; i < n; i++) {
+		delete[] matrix[i];
+	}
+	delete[] matrix;
+}
+
+void test30() {
+	int n = 4, m = 4;
+	int i_expected = 3, j_expected = 1;
+
+	int** matrix = new int* [n];
+	matrix[0] = new int[m] {2, 2, 2, 2};
+	matrix[1] = new int[m] {2, 1, 2, 2};
+	matrix[2] = new int[m] {1, 2, 2, 2};
+	matrix[3] = new int[m] {2, 2, 2, 2};
+
+	print_test(matrix, n, m, i_expected, j_expected, "test30");
+
+	for (int i = 0; i < n; i++) {
+		delete[] matrix[i];
+	}
+	delete[] matrix;
+}
+
+void test31() {
+	int n = 4, m = 4;
+	int i_expected = 2, j_expected = 4;
+
+	int** matrix = new int* [n];
+	matrix[0] = new int[m] {2, 1, 2, 2};
+	matrix[1] = new int[m] {2, 2, 2, 1};
+	matrix[2] = new int[m] {2, 2, 2, 2};
+	matrix[3] = new int[m] {2, 2, 2, 2};
+
+	print_test(matrix, n, m, i_expected, j_expected, "test31");
+
+	for (int i = 0; i < n; i++) {
+		delete[] matrix[i];
+	}
+	delete[] matrix;
+}
+
+void test32() {
+	int n = 4, m = 4;
+	int i_expected = 2, j_expected = 1;
+
+	int** matrix = new int* [n];
+	matrix[0] = new int[m] {2, 1, 2, 2};
+	matrix[1] = new int[m] {1, 2, 2, 2};
+	matrix[2] = new int[m] {2, 2, 2, 2};
+	matrix[3] = new int[m] {2, 2, 2, 2};
+
+	print_test(matrix, n, m, i_expected, j_expected, "test32");
+
+	for (int i = 0; i < n; i++) {
+		delete[] matrix[i];
+	}
+	delete[] matrix;
+}
+
+void test33() {
+	int n = 4, m = 4;
+	int i_expected = 1, j_expected = 4;
+
+	int** matrix = new int* [n];
+	matrix[0] = new int[m] {2, 1, 2, 1};
+	matrix[1] = new int[m] {2, 2, 2, 2};
+	matrix[2] = new int[m] {2, 2, 2, 2};
+	matrix[3] = new int[m] {2, 2, 2, 2};
+
+	print_test(matrix, n, m, i_expected, j_expected, "test33");
+
+	for (int i = 0; i < n; i++) {
+		delete[] matrix[i];
+	}
+	delete[] matrix;
+}
+
+void test34() {
+	int n = 4, m = 4;
+	int i_expected = 1, j_expected = 3;
+
+	int** matrix = new int* [n];
+	matrix[0] = new int[m] {1, 2, 1, 2};
+	matrix[1] = new int[m] {2, 2, 2, 2};
+	matrix[2] = new int[m] {2, 2, 2, 2};
+	matrix[3] = new int[m] {2, 2, 2, 2};
+
+	print_test(matrix, n, m, i_expected, j_expected, "test34");
+
+	for (int i = 0; i < n; i++) {
+		delete[] matrix[i];
+	}
+	delete[] matrix;
+}
+
+void test35() {
+	int n = 4, m = 4;
+	int i_expected = 1, j_expected = 2;
+
+	int** matrix = new int* [n];
+	matrix[0] = new int[m] {2, 1, 2, 2};
+	matrix[1] = new int[m] {2, 2, 2, 2};
+	matrix[2] = new int[m] {2, 2, 2, 2};
+	matrix[3] = new int[m] {2, 2, 2, 2};
+
+	print_test(matrix, n, m, i_expected, j_expected, "test35");
+
+	for (int i = 0; i < n; i++) {
+		delete[] matrix[i];
+	}
+	delete[] matrix;
+}
+
+void test36() {
+	int n = 4, m = 4;
+	int i_expected = 1, j_expected = 1;
+
+	int** matrix = new int* [n];
+	matrix[0] = new int[m] {1, 2, 2, 2};
+	matrix[1] = new int[m] {2, 2, 2, 2};
+	matrix[2] = new int[m] {2, 2, 2, 2};
+	matrix[3] = new int[m] {2, 2, 2, 2};
+
+	print_test(matrix, n, m, i_expected, j_expected, "test36");
+
+	for (int i = 0; i < n; i++) {
+		delete[] matrix[i];
+	}
+	delete[] matrix;
+}
